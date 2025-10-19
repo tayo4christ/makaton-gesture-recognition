@@ -64,35 +64,51 @@ Ensure you have Python 3.10 or higher installed, then install dependencies:
 
 ```bash
 pip install opencv-python mediapipe numpy pillow
+
 ```
 
 Running the Application
+```bash
 git clone https://github.com/tayo4christ/makaton-gesture-recognition.git
 cd makaton-gesture-recognition
 python makaton_recognition.py
-
+```
 
 Use your webcam to perform gestures. The GUI will display the detected gesture and its translation.
 ---
+
 ## ✅ Field Testing
 
-The prototype was tested with 8 students at Derby Cathedral School, Derby, UK.
-Feedback showed the interface was intuitive and translations were accurate for supported gestures.
-This demonstrates early-stage validation and real-world relevance — essential for inclusive AI systems.
----
-## 🧠 Recognized Gestures and Descriptions
-Gesture	Description
-Hello	Open hand, palm facing forward, all fingers extended
-Goodbye	Open hand, palm facing forward, moving fingers as if waving
-Please	Flat hand, palm facing up, moving in a small circular motion
-Thank You	Flat hand, palm facing up, moving away from the chin
-Yes	Fist with thumb up
-📸 Screenshots / Demo
+The prototype was **tested with 8 students at Derby Cathedral School**, Derby, UK.  
+Feedback showed the interface was intuitive and translations were accurate for supported gestures.  
+This demonstrates **early-stage validation** and **real-world relevance** — essential for inclusive AI systems.
 
-🎬 Demo video and screenshots available in the media/ folder (add yours there).
-Example:
 ---
+
+## 🧠 Recognized Gestures and Descriptions
+
+| Gesture   | Description                                                          |
+|------------|----------------------------------------------------------------------|
+| Hello      | Open hand, palm facing forward, all fingers extended                 |
+| Goodbye    | Open hand, palm facing forward, moving fingers as if waving          |
+| Please     | Flat hand, palm facing up, moving in a small circular motion         |
+| Thank You  | Flat hand, palm facing up, moving away from the chin                 |
+| Yes        | Fist with thumb up                                                   |
+
+---
+
+## 📸 Screenshots / Demo
+
+🎬 Demo video and screenshots available in the `media/` folder (add yours there).  
+Example:
+
+![App Interface](media/demo-sample.png)
+
+---
+
 ## 🧱 Project Structure
+
+```text
 makaton-gesture-recognition/
 │
 ├── src/                  # Core source code
@@ -102,43 +118,43 @@ makaton-gesture-recognition/
 ├── tests/                # Unit tests
 ├── media/                # Demo videos & screenshots
 └── README.md             # Project documentation
+
 ---
+
 ## 🗺️ Roadmap
 
- Initial prototype (gesture-to-text)
+- [x] Initial prototype (gesture-to-text)  
+- [ ] Add dynamic Makaton gesture recognition (temporal analysis)  
+- [ ] Integrate English text-to-speech output  
+- [ ] Expand dataset beyond 10 core gestures  
+- [ ] Deploy a web demo using Streamlit or Gradio  
 
- Add dynamic Makaton gesture recognition (temporal analysis)
-
- Integrate English text-to-speech output
-
- Expand dataset beyond 10 core gestures
-
- Deploy a web demo using Streamlit or Gradio
 ---
+
 ## 🤝 Contributions
 
-Contributions are welcome!
+Contributions are welcome!  
 You can help by:
 
-Improving gesture detection accuracy
-
-Adding new signs
-
-Enhancing the GUI and accessibility features
+- Improving gesture detection accuracy  
+- Adding new signs  
+- Enhancing the GUI and accessibility features  
 
 Create a pull request or open an issue — let’s build accessible AI together 💪.
+
 ---
+
 ## 🧠 Author
 
-Omotayo Omoyemi
-MSc in Computer Science | Researcher in AI & Education
+**Omotayo Omoyemi**  
+MSc in Computer Science | Researcher in AI & Education  
 
-LinkedIn: https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/
+- **LinkedIn:** [https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/](https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/)  
+- **FreeCodeCamp Publications:** [https://www.freecodecamp.org/news/author/tayo4christ/](https://www.freecodecamp.org/news/author/tayo4christ/)  
+- **ACM Publication:** [https://dl.acm.org/doi/10.1145/3708635.3708647](https://dl.acm.org/doi/10.1145/3708635.3708647)  
 
-FreeCodeCamp Publications: https://www.freecodecamp.org/news/author/tayo4christ/
-
-ACM Publication: https://dl.acm.org/doi/10.1145/3708635.3708647
 ---
+
 ## 📜 License
 
-This project is open-source and available under the MIT License
+This project is open-source and available under the **MIT License**.
