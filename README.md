@@ -46,11 +46,14 @@ This tool bridges that gap by recognizing predefined hand gestures and translati
 ```text
 Video Input ➜ Frame Extraction ➜ Hand Landmark Detection ➜ Gesture Classification ➜ English Translation ➜ Display on GUI
 
+---
+
 📥 Input / Output
 
 Input: Live webcam stream of hand gestures
 
 Output: Recognized Makaton gesture and corresponding English translation displayed on screen
+---
 
 💻 Usage Instructions
 Prerequisites
@@ -66,13 +69,13 @@ python makaton_recognition.py
 
 
 Use your webcam to perform gestures. The GUI will display the detected gesture and its translation.
-
+---
 ✅ Field Testing
 
 The prototype was tested with 8 students at Derby Cathedral School, Derby, UK.
 Feedback showed the interface was intuitive and translations were accurate for supported gestures.
 This demonstrates early-stage validation and real-world relevance — essential for inclusive AI systems.
-
+---
 🧠 Recognized Gestures and Descriptions
 Gesture	Description
 Hello	Open hand, palm facing forward, all fingers extended
@@ -84,7 +87,7 @@ Yes	Fist with thumb up
 
 🎬 Demo video and screenshots available in the media/ folder (add yours there).
 Example:
-
+---
 🧱 Project Structure
 makaton-gesture-recognition/
 │
@@ -95,7 +98,7 @@ makaton-gesture-recognition/
 ├── tests/                # Unit tests
 ├── media/                # Demo videos & screenshots
 └── README.md             # Project documentation
-
+---
 🗺️ Roadmap
 
  Initial prototype (gesture-to-text)
@@ -107,7 +110,7 @@ makaton-gesture-recognition/
  Expand dataset beyond 10 core gestures
 
  Deploy a web demo using Streamlit or Gradio
-
+---
 🤝 Contributions
 
 Contributions are welcome!
@@ -120,7 +123,7 @@ Adding new signs
 Enhancing the GUI and accessibility features
 
 Create a pull request or open an issue — let’s build accessible AI together 💪.
-
+---
 🧠 Author
 
 Omotayo Omoyemi
@@ -131,7 +134,7 @@ LinkedIn: https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/
 FreeCodeCamp Publications: https://www.freecodecamp.org/news/author/tayo4christ/
 
 ACM Publication: https://dl.acm.org/doi/10.1145/3708635.3708647
-
+---
 📜 License
 
 This project is open-source and available under the MIT License
