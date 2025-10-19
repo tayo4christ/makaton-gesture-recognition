@@ -118,7 +118,7 @@ makaton-gesture-recognition/
 ├── tests/                # Unit tests
 ├── media/                # Demo videos & screenshots
 └── README.md             # Project documentation
-
+```
 ---
 
 ## 🗺️ Roadmap
