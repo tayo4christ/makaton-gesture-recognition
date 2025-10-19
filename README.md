@@ -43,24 +43,28 @@ This tool bridges that gap by recognizing predefined hand gestures and translati
 
 ## ⚙️ System Architecture
 
-```text
 Video Input ➜ Frame Extraction ➜ Hand Landmark Detection ➜ Gesture Classification ➜ English Translation ➜ Display on GUI
 
 ---
 
 ## 📥 Input / Output
 
-Input: Live webcam stream of hand gestures
+**Input:**  
+Live webcam stream of hand gestures  
 
-Output: Recognized Makaton gesture and corresponding English translation displayed on screen
+**Output:**  
+Recognized Makaton gesture and corresponding English translation displayed on screen  
+
 ---
 
 ## 💻 Usage Instructions
-Prerequisites
 
+### 🧰 Prerequisites
 Ensure you have Python 3.10 or higher installed, then install dependencies:
 
+```bash
 pip install opencv-python mediapipe numpy pillow
+
 
 Running the Application
 git clone https://github.com/tayo4christ/makaton-gesture-recognition.git
