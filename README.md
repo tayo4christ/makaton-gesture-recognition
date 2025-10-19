@@ -48,14 +48,14 @@ Video Input ➜ Frame Extraction ➜ Hand Landmark Detection ➜ Gesture Classif
 
 ---
 
-📥 Input / Output
+## 📥 Input / Output
 
 Input: Live webcam stream of hand gestures
 
 Output: Recognized Makaton gesture and corresponding English translation displayed on screen
 ---
 
-💻 Usage Instructions
+## 💻 Usage Instructions
 Prerequisites
 
 Ensure you have Python 3.10 or higher installed, then install dependencies:
@@ -70,13 +70,13 @@ python makaton_recognition.py
 
 Use your webcam to perform gestures. The GUI will display the detected gesture and its translation.
 ---
-✅ Field Testing
+## ✅ Field Testing
 
 The prototype was tested with 8 students at Derby Cathedral School, Derby, UK.
 Feedback showed the interface was intuitive and translations were accurate for supported gestures.
 This demonstrates early-stage validation and real-world relevance — essential for inclusive AI systems.
 ---
-🧠 Recognized Gestures and Descriptions
+## 🧠 Recognized Gestures and Descriptions
 Gesture	Description
 Hello	Open hand, palm facing forward, all fingers extended
 Goodbye	Open hand, palm facing forward, moving fingers as if waving
@@ -88,7 +88,7 @@ Yes	Fist with thumb up
 🎬 Demo video and screenshots available in the media/ folder (add yours there).
 Example:
 ---
-🧱 Project Structure
+## 🧱 Project Structure
 makaton-gesture-recognition/
 │
 ├── src/                  # Core source code
@@ -99,7 +99,7 @@ makaton-gesture-recognition/
 ├── media/                # Demo videos & screenshots
 └── README.md             # Project documentation
 ---
-🗺️ Roadmap
+## 🗺️ Roadmap
 
  Initial prototype (gesture-to-text)
 
@@ -111,7 +111,7 @@ makaton-gesture-recognition/
 
  Deploy a web demo using Streamlit or Gradio
 ---
-🤝 Contributions
+## 🤝 Contributions
 
 Contributions are welcome!
 You can help by:
@@ -124,7 +124,7 @@ Enhancing the GUI and accessibility features
 
 Create a pull request or open an issue — let’s build accessible AI together 💪.
 ---
-🧠 Author
+## 🧠 Author
 
 Omotayo Omoyemi
 MSc in Computer Science | Researcher in AI & Education
@@ -135,6 +135,6 @@ FreeCodeCamp Publications: https://www.freecodecamp.org/news/author/tayo4christ/
 
 ACM Publication: https://dl.acm.org/doi/10.1145/3708635.3708647
 ---
-📜 License
+## 📜 License
 
 This project is open-source and available under the MIT License
