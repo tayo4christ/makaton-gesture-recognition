@@ -64,7 +64,7 @@ Ensure you have Python 3.10 or higher installed, then install dependencies:
 
 ```bash
 pip install opencv-python mediapipe numpy pillow
-
+```
 
 Running the Application
 git clone https://github.com/tayo4christ/makaton-gesture-recognition.git
