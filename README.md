@@ -8,7 +8,7 @@
 
 ## 🌍 Overview
 
-This project provides a **real-time hand gesture recognition system** tailored to translate basic **Makaton gestures into English text**.  
+This project provides a **real-time hand gesture recognition system** tailored to translate basic **Makaton gestures into English text**.
 Built with computer vision and deep learning technologies, it enables **inclusive communication** for individuals with speech or language difficulties.
 
 This innovation combines **computer vision and assistive AI** to make communication tools more inclusive and accessible for learners and individuals with speech challenges.
@@ -17,16 +17,16 @@ This innovation combines **computer vision and assistive AI** to make communicat
 
 ## 🔍 Problem It Solves
 
-Many individuals who rely on Makaton for communication face barriers when interacting with non-Makaton users.  
+Many individuals who rely on Makaton for communication face barriers when interacting with non-Makaton users.
 This tool bridges that gap by recognizing predefined hand gestures and translating them into English in real time, helping **Makaton and non-Makaton users** communicate more effectively.
 
 ---
 
 ## 👥 Intended Users
 
-- Makaton users  
-- Educators and support staff working with individuals with communication difficulties  
-- Researchers and developers exploring gesture-based communication systems  
+- Makaton users
+- Educators and support staff working with individuals with communication difficulties
+- Researchers and developers exploring gesture-based communication systems
 
 ---
 
@@ -49,11 +49,11 @@ Video Input ➜ Frame Extraction ➜ Hand Landmark Detection ➜ Gesture Classif
 
 ## 📥 Input / Output
 
-**Input:**  
-Live webcam stream of hand gestures  
+**Input:**
+Live webcam stream of hand gestures
 
-**Output:**  
-Recognized Makaton gesture and corresponding English translation displayed on screen  
+**Output:**
+Recognized Makaton gesture and corresponding English translation displayed on screen
 
 ---
 
@@ -79,8 +79,8 @@ Use your webcam to perform gestures. The GUI will display the detected gesture a
 
 ## ✅ Field Testing
 
-The prototype was **tested with 8 students at Derby Cathedral School**, Derby, UK.  
-Feedback showed the interface was intuitive and translations were accurate for supported gestures.  
+The prototype was **tested with 8 students at Derby Cathedral School**, Derby, UK.
+Feedback showed the interface was intuitive and translations were accurate for supported gestures.
 This demonstrates **early-stage validation** and **real-world relevance** — essential for inclusive AI systems.
 
 ---
@@ -99,7 +99,7 @@ This demonstrates **early-stage validation** and **real-world relevance** — es
 
 ## 📸 Screenshots / Demo
 
-🎬 Demo video and screenshots available in the `media/` folder (add yours there).  
+🎬 Demo video and screenshots available in the `media/` folder (add yours there).
 Example:
 
 ![App Interface](media/demo-sample.png)
@@ -123,22 +123,22 @@ makaton-gesture-recognition/
 
 ## 🗺️ Roadmap
 
-- [x] Initial prototype (gesture-to-text)  
-- [ ] Add dynamic Makaton gesture recognition (temporal analysis)  
-- [ ] Integrate English text-to-speech output  
-- [ ] Expand dataset beyond 10 core gestures  
-- [ ] Deploy a web demo using Streamlit or Gradio  
+- [x] Initial prototype (gesture-to-text)
+- [ ] Add dynamic Makaton gesture recognition (temporal analysis)
+- [ ] Integrate English text-to-speech output
+- [ ] Expand dataset beyond 10 core gestures
+- [ ] Deploy a web demo using Streamlit or Gradio
 
 ---
 
 ## 🤝 Contributions
 
-Contributions are welcome!  
+Contributions are welcome!
 You can help by:
 
-- Improving gesture detection accuracy  
-- Adding new signs  
-- Enhancing the GUI and accessibility features  
+- Improving gesture detection accuracy
+- Adding new signs
+- Enhancing the GUI and accessibility features
 
 Create a pull request or open an issue — let’s build accessible AI together 💪.
 
@@ -146,12 +146,12 @@ Create a pull request or open an issue — let’s build accessible AI together 
 
 ## 🧠 Author
 
-**Omotayo Omoyemi**  
-MSc in Computer Science | Researcher in AI & Education  
+**Omotayo Omoyemi**
+MSc in Computer Science | Researcher in AI & Education
 
-- **LinkedIn:** [https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/](https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/)  
-- **FreeCodeCamp Publications:** [https://www.freecodecamp.org/news/author/tayo4christ/](https://www.freecodecamp.org/news/author/tayo4christ/)  
-- **ACM Publication:** [https://dl.acm.org/doi/10.1145/3708635.3708647](https://dl.acm.org/doi/10.1145/3708635.3708647)  
+- **LinkedIn:** [https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/](https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/)
+- **FreeCodeCamp Publications:** [https://www.freecodecamp.org/news/author/tayo4christ/](https://www.freecodecamp.org/news/author/tayo4christ/)
+- **ACM Publication:** [https://dl.acm.org/doi/10.1145/3708635.3708647](https://dl.acm.org/doi/10.1145/3708635.3708647)
 
 ---
 

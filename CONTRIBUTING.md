@@ -8,7 +8,7 @@ We welcome all contributions that make this project better — whether through c
 
 ## 🧩 How to Contribute
 
-1. **Fork** the repository and **clone** it locally.  
+1. **Fork** the repository and **clone** it locally.
 2. Create a new branch for your contribution:
    ```bash
    git checkout -b feature/my-improvement
