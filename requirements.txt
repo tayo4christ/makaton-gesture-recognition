@@ -2,3 +2,8 @@ opencv-python
 mediapipe
 numpy
 pillow
+
+# dev tools
+black
+ruff
+pytest
