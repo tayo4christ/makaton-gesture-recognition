@@ -1,3 +1,5 @@
+![CI](https://github.com/tayo4christ/makaton-gesture-recognition/actions/workflows/ci.yml/badge.svg)
+
 # Makaton Gesture Recognition Tool 🤖✋
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#)
@@ -152,6 +154,13 @@ MSc in Computer Science | Researcher in AI & Education
 - **LinkedIn:** [https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/](https://www.linkedin.com/in/omotayo-emmanuel-omoyemi-mbcs-054484191/)
 - **FreeCodeCamp Publications:** [https://www.freecodecamp.org/news/author/tayo4christ/](https://www.freecodecamp.org/news/author/tayo4christ/)
 - **ACM Publication:** [https://dl.acm.org/doi/10.1145/3708635.3708647](https://dl.acm.org/doi/10.1145/3708635.3708647)
+
+---
+
+## 🧩 Version
+**Current Release:** `v1.0.0`
+Stable foundation with CI/CD, pre-commit hooks, Ruff linting, and auto-formatting.
+Next milestone: implement gesture dataset expansion and text-to-speech.
 
 ---
 
