@@ -41,6 +41,10 @@ Potential collaborations: NHS communication support units, SEND schools, and inc
 
 ---
 
+➡️ See full [ROADMAP.md](ROADMAP.md) for upcoming milestones.
+
+---
+
 ## 👩‍💻 Maintainer
 **Omotayo Omoyemi**
 MSc in Computer Science | AI & Education Researcher
