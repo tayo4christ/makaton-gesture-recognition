@@ -79,6 +79,36 @@ python makaton_recognition.py
 Use your webcam to perform gestures. The GUI will display the detected gesture and its translation.
 ---
 
+## ⚙️ Developer Setup
+
+If you’d like to contribute or run the project in development mode, follow these steps:
+
+### 1️⃣ Create and activate a virtual environment
+
+```bash
+python -m venv .venv
+# On Windows
+.\.venv\Scripts\Activate
+# On macOS/Linux
+source .venv/bin/activate
+```
+
+2️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+3️⃣ Run pre-commit hooks locally (for formatting and linting)
+```bash
+pre-commit install
+pre-commit run --all-files
+```
+
+4️⃣ Run tests
+```bash
+pytest -q
+```
+---
+
 ## ✅ Field Testing
 
 The prototype was **tested with 8 students at Derby Cathedral School**, Derby, UK.
