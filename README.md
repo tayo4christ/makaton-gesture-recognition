@@ -172,6 +172,11 @@ You can help by:
 - Adding new signs
 - Enhancing the GUI and accessibility features
 
+Before contributing, please read our [CONTRIBUTING.md](CONTRIBUTING.md) guide for details on:
+- Project setup and environment
+- Code style and commit conventions
+- How to open pull requests or report issues
+
 Create a pull request or open an issue — let’s build accessible AI together 💪.
 
 ---
