@@ -199,6 +199,15 @@ Next milestone: implement gesture dataset expansion and text-to-speech.
 
 ---
 
+## 🌐 Community & Code of Conduct
+
+We’re committed to fostering an open, welcoming, and harassment-free community for everyone.
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/)
+
+---
+
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
