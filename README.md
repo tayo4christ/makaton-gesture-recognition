@@ -208,6 +208,23 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ---
 
+## 🔍 Project Insights
+
+This project is part of ongoing research on **AI-assisted communication systems**, focusing on translating Makaton gestures into English.
+It explores **computer vision**, **gesture recognition**, and **assistive technology for inclusion**.
+
+Future research directions include:
+- Integrating speech synthesis for full gesture-to-speech communication
+- Improving temporal recognition of dynamic gestures
+- Expanding datasets for better generalization
+- Exploring multimodal inputs (e.g., face expressions, context awareness)
+
+---
+
+**Research Focus:** Inclusive AI • Assistive Technology • Computer Vision • NLP Integration
+
+---
+
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
