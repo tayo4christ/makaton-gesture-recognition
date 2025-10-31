@@ -225,6 +225,21 @@ Future research directions include:
 
 ---
 
+## 📚 Citations & References
+
+If you reference or build upon this project in academic or research work, please cite:
+
+> S. Karkalas, Omoyemi O. (2024). *Designing a tool that automatically translate Makaton signs from Live video streams into English.*
+> In Proceedings of the 13th International Conference on Software and Information Engineering (ICSIE 2024).
+> DOI: [10.1145/3708635.3708647](https://dl.acm.org/doi/10.1145/3708635.3708647)
+
+This repository also draws inspiration from:
+- Google Mediapipe Hand Tracking documentation
+- OpenCV real-time video analysis guides
+- Python Tkinter GUI frameworks for accessibility tools
+
+---
+
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
