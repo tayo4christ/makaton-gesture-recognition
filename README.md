@@ -8,6 +8,14 @@
 
 ---
 
+[![Status](https://img.shields.io/badge/status-active-success.svg)](#)
+[![Research](https://img.shields.io/badge/research-AI%20%26%20Education-blue.svg)](#)
+[![Made with Python](https://img.shields.io/badge/made%20with-Python%203.10+-yellow.svg)](#)
+[![Maintained](https://img.shields.io/badge/maintained-yes-green.svg)](#)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#)
+
+---
+
 ## 🌍 Overview
 
 This project provides a **real-time hand gesture recognition system** tailored to translate basic **Makaton gestures into English text**.
