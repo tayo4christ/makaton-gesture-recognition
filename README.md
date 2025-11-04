@@ -248,6 +248,16 @@ This repository also draws inspiration from:
 
 ---
 
+## 🙏 Acknowledgements
+
+Special thanks to the open-source community projects and mentors who inspired this work:
+- **MediaPipe** by Google for providing accessible hand-tracking tools
+- **OpenCV** community for continuous innovation in computer vision
+- **Dr. Sokratis Karkalas** for research guidance and collaboration during ICSIE 2024
+- All educators and students who provided early feedback during prototype testing
+
+---
+
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
