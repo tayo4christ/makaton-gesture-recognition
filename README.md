@@ -1,6 +1,9 @@
 ![CI](https://github.com/tayo4christ/makaton-gesture-recognition/actions/workflows/ci.yml/badge.svg)
 
-# Makaton Gesture Recognition Tool 🤖✋
+<p align="center">
+  <img src="media/banner.png" alt="Makaton Gesture Recognition Tool Banner" width="100%">
+</p>
+
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#)
 [![Coverage](https://img.shields.io/badge/coverage-80%25-green)](#)
