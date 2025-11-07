@@ -1,7 +1,7 @@
 ![CI](https://github.com/tayo4christ/makaton-gesture-recognition/actions/workflows/ci.yml/badge.svg)
 
 <p align="center">
-  <img src="media/banner.png" alt="Makaton Gesture Recognition Tool Banner" width="100%">
+  <img src="Media/banner.png" alt="Makaton Gesture Recognition Tool Banner" width="100%">
 </p>
 
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)](#)
