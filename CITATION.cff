@@ -1,0 +1,24 @@
+# CITATION.cff
+cff-version: 1.2.0
+title: "Makaton Gesture Recognition Tool"
+message: "If you use this project, please cite it as below."
+type: software
+authors:
+  - family-names: Omoyemi
+    given-names: Omotayo Emmanuel
+    orcid: "https://orcid.org/0009-0003-6625-680X"
+identifiers:
+  - type: doi
+    value: "10.1145/3708635.3708647"
+repository-code: "https://github.com/tayo4christ/makaton-gesture-recognition"
+abstract: >
+  A real-time hand gesture recognition system translating basic Makaton gestures into English text
+  using computer vision and AI. Designed for inclusive communication in education and assistive technology.
+license: MIT
+version: 1.0.0
+keywords:
+  - makaton
+  - gesture recognition
+  - computer vision
+  - assistive AI
+  - inclusive education
