@@ -1,0 +1,9 @@
+# 👥 Code Owners for Makaton Gesture Recognition Tool
+
+# The owner responsible for reviewing all code changes
+* @tayo4christ
+
+# Optional: specify ownership by file or directory (for future collaborators)
+# /src/ @tayo4christ
+# /docs/ @tayo4christ
+# /tests/ @tayo4christ
