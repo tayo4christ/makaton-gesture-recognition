@@ -30,3 +30,20 @@ We aim to respond to all issues and support requests within **5 business days**.
 ## 🙏 Appreciation
 Your feedback helps make the Makaton Gesture Recognition Tool better and more accessible for everyone.
 Thank you for being part of this open-source effort ❤️
+
+---
+
+## Using This Tool vs. Learning Makaton
+
+This project helps recognise a small set of Makaton-style gestures for research and prototyping.
+It does **not** replace:
+
+- Official Makaton training
+- Speech and language therapy
+- Professional communication support
+
+If you, a learner, or a family member needs support with Makaton itself, please seek:
+
+- Official Makaton training providers
+- Speech and language professionals
+- Local schools and support centres experienced with Makaton or similar communication systems

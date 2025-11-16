@@ -251,6 +251,18 @@ This repository also draws inspiration from:
 
 ---
 
+## 💬 Support & Help
+
+If you need help using the Makaton Gesture Recognition Tool or want to report a problem, please:
+
+- First read the [SUPPORT.md](SUPPORT.md) guide for common issues and FAQs.
+- Open a [GitHub issue](https://github.com/tayo4christ/makaton-gesture-recognition/issues) for bug reports and feature requests.
+- For security-related concerns, follow the process described in [SECURITY.md](SECURITY.md).
+
+> Note: This tool is **not** a replacement for official Makaton training.
+> For learning or teaching Makaton itself, please refer to official Makaton training providers and resources in your region.
+---
+
 ## 🙏 Acknowledgements
 
 Special thanks to the open-source community projects and mentors who inspired this work:
