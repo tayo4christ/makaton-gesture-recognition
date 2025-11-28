@@ -1,9 +1,19 @@
+import logging
 import tkinter as tk
 
 import cv2
 import mediapipe as mp
 import numpy as np
 from PIL import Image, ImageTk
+
+from logging_config import setup_logging
+
+# -----------------------------
+# Logging
+# -----------------------------
+
+setup_logging()
+logger = logging.getLogger(__name__)
 
 # -----------------------------
 # Setup
@@ -73,16 +83,19 @@ def recognize_gesture(landmarks):
         return "Thank You"  # Flat hand moving away from chin
     elif thumb_tip.x < index_tip.x:
         return "Yes"  # Fist with thumb up
+    logger.debug("No gesture matched current landmark configuration")
     return None
 
 
 def update_frame():
     """Grab a frame, run hand detection + gesture recognition, update GUI."""
     if cap is None or not cap.isOpened():
+        logger.warning("update_frame called but camera is not open")
         return
 
     ok, frame = cap.read()
     if not ok:
+        logger.warning("Failed to read frame from webcam")
         return
 
     # Convert BGR->RGB for Mediapipe
@@ -108,6 +121,7 @@ def update_frame():
             text=f"Description: {GESTURE_DESCRIPTIONS.get(gesture, '')}"
         )
         log_listbox.insert(tk.END, f"Gesture: {gesture}")
+        logger.info("Recognised gesture: %s", gesture)
     else:
         gesture_label.config(text="Gesture: None")
         description_label.config(text="Description: None")
@@ -124,23 +138,30 @@ def update_frame():
 def start_video():
     global cap
     if cap is None or not cap.isOpened():
+        logger.info("Starting webcam capture")
         cap = cv2.VideoCapture(0)
+        if not cap.isOpened():
+            logger.error("Failed to open webcam on index 0")
+            return
     update_frame()
 
 
 def stop_video():
     global cap
     if cap is not None and cap.isOpened():
+        logger.info("Stopping webcam capture")
         cap.release()
     video_label.config(image="")
     video_label.imgtk = None
 
 
 def clear_log():
+    logger.info("Clearing gesture log in UI")
     log_listbox.delete(0, tk.END)
 
 
 def exit_app():
+    logger.info("Exiting application from GUI")
     stop_video()
     window.destroy()
 
@@ -188,4 +209,5 @@ window.mainloop()
 # Cleanup
 if cap is not None and cap.isOpened():
     cap.release()
+    logger.info("Application shutdown complete")
 cv2.destroyAllWindows()
