@@ -1,0 +1,12 @@
+camera:
+  index: 0          # default webcam index
+
+gui:
+  refresh_ms: 10    # how often to refresh frames in the GUI (milliseconds)
+
+gesture_thresholds:
+  hello_min_distance: 0.2      # all fingers extended
+  goodbye_max_distance: 0.1    # fingers close together
+
+logging:
+  level: INFO       # INFO / DEBUG / WARNING / ERROR (for future use)

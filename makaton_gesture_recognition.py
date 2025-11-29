@@ -6,14 +6,21 @@ import mediapipe as mp
 import numpy as np
 from PIL import Image, ImageTk
 
+from config_loader import load_config
 from logging_config import setup_logging
 
 # -----------------------------
-# Logging
+# Logging & Config
 # -----------------------------
 
 setup_logging()
 logger = logging.getLogger(__name__)
+config = load_config()
+
+HELLO_MIN_DIST = config.gesture_thresholds.hello_min_distance
+GOODBYE_MAX_DIST = config.gesture_thresholds.goodbye_max_distance
+REFRESH_MS = config.gui.refresh_ms
+CAMERA_INDEX = config.camera.index
 
 # -----------------------------
 # Setup
@@ -64,17 +71,17 @@ def recognize_gesture(landmarks):
 
     # Simple gesture rules (placeholder logic)
     if (
-        thumb_index_dist > 0.2
-        and thumb_middle_dist > 0.2
-        and thumb_ring_dist > 0.2
-        and thumb_pinky_dist > 0.2
+        thumb_index_dist > HELLO_MIN_DIST
+        and thumb_middle_dist > HELLO_MIN_DIST
+        and thumb_ring_dist > HELLO_MIN_DIST
+        and thumb_pinky_dist > HELLO_MIN_DIST
     ):
         return "Hello"  # All fingers extended
     elif (
-        thumb_index_dist < 0.1
-        and thumb_middle_dist < 0.1
-        and thumb_ring_dist < 0.1
-        and thumb_pinky_dist < 0.1
+        thumb_index_dist < GOODBYE_MAX_DIST
+        and thumb_middle_dist < GOODBYE_MAX_DIST
+        and thumb_ring_dist < GOODBYE_MAX_DIST
+        and thumb_pinky_dist < GOODBYE_MAX_DIST
     ):
         return "Goodbye"  # Fingers together, waving
     elif wrist_thumb_dist < wrist_index_dist and thumb_tip.y < wrist.y:
@@ -126,8 +133,8 @@ def update_frame():
         gesture_label.config(text="Gesture: None")
         description_label.config(text="Description: None")
 
-    # Schedule next frame
-    video_label.after(10, update_frame)
+    # Schedule next frame using configured refresh rate
+    video_label.after(REFRESH_MS, update_frame)
 
 
 # -----------------------------
@@ -138,10 +145,10 @@ def update_frame():
 def start_video():
     global cap
     if cap is None or not cap.isOpened():
-        logger.info("Starting webcam capture")
-        cap = cv2.VideoCapture(0)
+        logger.info("Starting webcam capture on index %s", CAMERA_INDEX)
+        cap = cv2.VideoCapture(CAMERA_INDEX)
         if not cap.isOpened():
-            logger.error("Failed to open webcam on index 0")
+            logger.error("Failed to open webcam on index %s", CAMERA_INDEX)
             return
     update_frame()
 
