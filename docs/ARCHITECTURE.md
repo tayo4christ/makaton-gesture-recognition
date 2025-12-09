@@ -74,7 +74,7 @@ This modular architecture ensures the recognition layer can evolve independently
 
 ### Mermaid Architecture Diagram (Rendered on GitHub)
 
-```
+```mermaid
 flowchart LR
     A[Webcam (Live Video)] --> B[OpenCV Frame Capture]
     B --> C[MediaPipe Hands (21 Landmarks)]
