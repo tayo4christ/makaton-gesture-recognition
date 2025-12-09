@@ -76,11 +76,11 @@ This modular architecture ensures the recognition layer can evolve independently
 
 ```mermaid
 flowchart LR
-    A[Webcam\n(Live Video)] --> B[OpenCV\nFrame Capture]
-    B --> C[MediaPipe Hands\n21 Landmarks]
+    A[Webcam (Live Video)] --> B[OpenCV Frame Capture]
+    B --> C[MediaPipe Hands (21 Landmarks)]
     C --> D[Rule-Based Gesture Recogniser]
     D --> E[Gesture Label + Description]
-    E --> F[Tkinter GUI\nReal-Time Display]
+    E --> F[Tkinter GUI (Real-Time Display)]
     D --> G[Logging System]
     C --> G
     B --> G
