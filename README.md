@@ -58,6 +58,14 @@ This tool bridges that gap by recognizing predefined hand gestures and translati
 
 Video Input ➜ Frame Extraction ➜ Hand Landmark Detection ➜ Gesture Classification ➜ English Translation ➜ Display on GUI
 
+### 📊 Runtime Sequence Diagram
+
+The diagram below illustrates how the system processes each frame in real time:
+
+<p align="center">
+  <img src="Media/runtime_sequence.png" alt="Runtime Sequence Diagram" width="95%">
+</p>
+
 ---
 
 ## 📥 Input / Output
