@@ -71,7 +71,8 @@ This modular architecture ensures the recognition layer can evolve independently
               │ Video + Label +   │
               │ Description + Log │
               └───────────────────┘
----
+
+```md
 ## Architecture Diagram
 
 ```mermaid
