@@ -39,53 +39,16 @@ This modular architecture ensures the recognition layer can evolve independently
 
 ---
 
-## 2. Data Flow Diagram
+## 2. System Architecture Diagram
 
-              ┌──────────────────┐
-              │     Webcam       │
-              │  (Live Video)    │
-              └───────▲──────────┘
-                      │ Frames
-                      │
-              ┌───────┴──────────┐
-              │    OpenCV         │
-              │ Frame Capture      │
-              └───────▲──────────┘
-                      │ RGB Frame
-                      │
-              ┌───────┴──────────┐
-              │   MediaPipe       │
-              │ Hand Landmarks    │
-              └───────▲──────────┘
-                      │ 21 Landmark Points
-                      │
-              ┌───────┴──────────┐
-              │ Rule-Based        │
-              │ Gesture Classifier│
-              └───────▲──────────┘
-                      │ Gesture Label
-                      │ (Hello / Yes / Please)
-                      │
-              ┌───────┴──────────┐
-              │     Tkinter GUI   │
-              │ Video + Label +   │
-              │ Description + Log │
-              └───────────────────┘
+The diagram below shows the major components of the Makaton Gesture Recognition Tool
+and how data flows through the system—from webcam input to gesture recognition,
+logging services, and user feedback.
 
-```md
-## Architecture Diagram
+<p align="center">
+  <img src="../Media/system_architecture.png" alt="System Architecture Diagram" width="95%">
+</p>
 
-```mermaid
-flowchart LR
-    A[Webcam (Live Video)] --> B[OpenCV Frame Capture]
-    B --> C[MediaPipe Hands (21 Landmarks)]
-    C --> D[Rule-Based Gesture Recogniser]
-    D --> E[Gesture Label + Description]
-    E --> F[Tkinter GUI (Real-Time Display)]
-    D --> G[Logging System]
-    C --> G
-    B --> G
-```
 ---
 ## 3. Component Breakdown
 
