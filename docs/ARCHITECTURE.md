@@ -1,6 +1,11 @@
 # System Architecture
 **Makaton Gesture Recognition Tool**
 
+## Purpose of This Document
+This architecture document describes the internal structure, data flow, and component interactions of the Makaton Gesture Recognition Tool.
+It is intended for technical reviewers, collaborators, and future contributors who need to understand the design principles, dependencies, and extensibility of the system.
+
+## Overview
 This document provides a technical deep dive into the architecture of the Makaton Gesture Recognition Tool.
 It describes the system components, data flow, gesture recognition pipeline, and future machine learning integration.
 
@@ -20,6 +25,17 @@ The application is composed of three major modules:
 
 3. **Graphical User Interface (GUI)**
    - Displays video stream, recognised gesture, description, and logs events using Tkinter.
+
+### System Modules and Boundaries
+The system is structured into well-defined layers:
+
+- **Input Layer** – webcam capture and frame preprocessing
+- **Perception Layer** – MediaPipe-based landmark extraction
+- **Recognition Layer** – rule-based gesture classification
+- **Presentation Layer** – UI rendering and live feedback via Tkinter
+- **Support Services** – configuration loading, logging, benchmarking, and tests
+
+This modular architecture ensures the recognition layer can evolve independently (e.g., move to ML models) without redesigning the rest of the system.
 
 ---
 
@@ -56,6 +72,19 @@ The application is composed of three major modules:
               │ Description + Log │
               └───────────────────┘
 
+### Mermaid Architecture Diagram (Rendered on GitHub)
+
+```mermaid
+flowchart LR
+    A[Webcam\n(Live Video)] --> B[OpenCV\nFrame Capture]
+    B --> C[MediaPipe Hands\n21 Landmarks]
+    C --> D[Rule-Based Gesture Recogniser]
+    D --> E[Gesture Label + Description]
+    E --> F[Tkinter GUI\nReal-Time Display]
+    D --> G[Logging System]
+    C --> G
+    B --> G
+```
 ---
 ## 3. Component Breakdown
 
@@ -102,6 +131,17 @@ This approach is:
 - Transparent (easy to debug)
 - Suitable for early-stage prototypes and classroom testing
 
+### 3.4 Rationale for Rule-Based Recognition (Current Phase)
+
+The rule-based gesture recogniser is used in the current version because:
+
+- It provides full explainability, which is important in educational settings
+- It allows deterministic debugging of gesture rules
+- It is lightweight and runs efficiently in real time
+- It avoids dependency on a large dataset, which is still being collected
+
+This approach forms a stable foundation while enabling a smooth transition towards a trained ML model.
+
 ---
 
 ## 4. Future Machine Learning Integration
@@ -122,7 +162,23 @@ This hybrid design ensures:
 
 ---
 
-## 5. GUI Architecture (Tkinter)
+## 5. ML Integration Compatibility
+
+The recognition layer is intentionally isolated so that future trained models
+(e.g., ONNX, scikit-learn, PyTorch) can replace the rule-based engine
+without requiring changes to:
+
+- the GUI
+- the webcam pipeline
+- MediaPipe landmark extraction
+- the logging system
+- configuration files
+
+This demonstrates forward compatibility and ensures a seamless upgrade path.
+
+---
+
+## 6. GUI Architecture (Tkinter)
 
 The GUI includes:
 
@@ -146,7 +202,7 @@ This ensures non-blocking UI performance during video processing.
 
 ---
 
-## 6. Error Handling & Fail-Safe Logic
+## 7. Error Handling & Fail-Safe Logic
 
 - If no hand is detected → show “Gesture: None”
 - If camera stops → GUI clears frame
@@ -155,7 +211,20 @@ This ensures non-blocking UI performance during video processing.
 
 ---
 
-## 7. Performance Considerations
+## 8. Cross-Cutting Concerns
+
+Several system-wide services operate independently of the gesture recognition logic:
+
+- Logging – structured logs used for debugging, performance evaluation, and system monitoring
+- Configuration Management – centralised via config.yaml for thresholds, camera index, and UI timing
+- Benchmarking Tools – measure FPS and latency for optimisation
+Error Handling – ensures graceful recovery if webcam frames fail or MediaPipe encounters invalid input
+
+These concerns are intentionally decoupled from business logic to improve maintainability.
+
+---
+
+## 9. Performance Considerations
 
 - Real-time processing at 720p
 - Landmark extraction is the heaviest step
@@ -165,7 +234,18 @@ This ensures non-blocking UI performance during video processing.
 
 ---
 
-## 8. Future Improvements
+## 10. Architectural Constraints
+
+The current design operates under the following constraints:
+
+- MediaPipe Hands runs on CPU (no GPU acceleration in Python)
+- Tkinter is single-threaded and requires non-blocking UI updates
+- Real-time performance limits the use of heavy ML models in early prototypes
+- All processing must occur locally to comply with safeguarding requirements in classrooms
+
+---
+
+## 11. Future Improvements
 
 - Replace rule-based logic with trained model
 - Add gesture confidence scores
@@ -176,7 +256,7 @@ This ensures non-blocking UI performance during video processing.
 
 ---
 
-## 9. Summary
+## 12. Summary
 
 This architecture ensures:
 
